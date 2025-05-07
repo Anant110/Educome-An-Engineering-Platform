@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EdulandApplication<eduland>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.eduland.eduland.EdulandApplication",
+            "projectName": "eduland",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

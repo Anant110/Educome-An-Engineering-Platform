@@ -1,0 +1,158 @@
+.features-page {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: var(--bg-color); /* Assuming --bg-color is defined elsewhere */
+  height: 100%;
+  position: relative; /* Ensure relative positioning for absolute children */
+  padding-bottom: 100px;
+}
+
+.Features-page-otter-icon {
+  height: 100px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Features-page-otter-icon-2 {
+  height: 80px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.features-page-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align text */
+  text-align: center;
+  font-size: 25px;
+}
+
+.Features-Page-Main-Heading {
+  font-size: 2.2rem;
+  font-weight: 700; /* Adjusted font weight */
+  opacity: 1;
+  margin: 0; /* Moved color to avoid using span */
+}
+
+.Features-Page-Main-Heading span {
+  position: relative;
+  right: 0px; /* Unnecessary property */
+  margin: 0px; /* Simplified margin */
+  color: rgb(34, 82, 213);
+}
+
+.Features-Page-SubHeading {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  opacity: 0.8;
+  word-spacing: 3px;
+  letter-spacing: 0px; /* Removed unnecessary property */
+  text-align: center; /* Center align text */
+}
+
+.features-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+  margin-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 0px;
+  background-color: var(--bg-color);
+}
+
+.features-card {
+  width: 300px;
+  margin-bottom: 30px;
+  padding: 6px;
+  border-radius: 20px; /* Added border-radius for rounded corners */
+  border: 1px hsla(217, 100%, 50%, 1) solid; /* Added solid border for clarity */
+  transition: transform 0.3s, box-shadow 0.3s; 
+  transition: .3s ease-in-out;
+  box-shadow: 0 0px 99px 21px rgba(35, 117, 193, 0.348);
+  /* box-shadow: 0 0px 20px 1px var(--main-color, .5); */
+}
+
+/* Add hover effect */
+.features-card:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 0px 99px 21px rgba(30, 131, 225, 0.573);
+}
+
+
+.feature-card-1{
+   display: flex;
+   justify-content: end;
+   align-items: end;
+   width: 100%;
+   padding-right: 450px;
+}
+
+.feature-card-2{
+   width: 100%;
+   padding-left: 450px;
+}
+
+.feature-card-3{
+   display: flex;
+   justify-content: end;
+   align-items: end;
+   width: 100%;
+   padding-right: 450px;
+}
+
+.feature-card-4{
+   width: 100%;
+   padding-left: 450px;
+}
+.feature-card-5{
+   display: flex;
+   justify-content: end;
+   align-items: end;
+   width: 100%;
+   padding-right:450px;
+}
+
+.feature-card-6{
+   width: 100%;
+   padding-left: 450px;
+}
+
+
+@media (max-width: 1005px) {
+  .features-page {
+    padding: 10px 20px; /* Adjusted padding for smaller screens */
+  }
+
+  .features-card {
+    width: 300px; /* Full width on smaller screens */
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+
+  .Features-Page-Main-Heading {
+    font-size: 23px;
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .Features-Page-SubHeading {
+    font-size: 1.2rem;
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .features-body {
+    padding: 20px; /* Adjusted padding for smaller screens */
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+
+}

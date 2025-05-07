@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+.messageBox {
+    width: 478px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 0 15px;
+    border-radius: 14px;
+    border: 1px solid rgb(63, 63, 63);
+    position: relative;
+    top: -50px;
+    left: 1px;
+}
+
+.messageBox:focus-within {
+  border: 2px solid var(--main-color);
+}
+
+.fileUploadWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#file {
+  display: none;
+}
+
+.fileUploadWrapper label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.fileUploadWrapper label svg {
+  height: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.fileUploadWrapper label:hover svg path,
+.fileUploadWrapper label:hover svg circle {
+  stroke: #fff;
+}
+
+.tooltip {
+  position: absolute;
+  top: -40px;
+  display: none;
+  opacity: 0;
+  color: white;
+  font-size: 12px;
+  background-color: #000;
+  padding: 6px 10px;
+  border: 1px solid #3600b4;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-out;
+}
+
+.fileUploadWrapper label:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
+
+#messageInputs {
+  width: 405px;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: Play;
+  font-size: 16px;
+}
+
+#messageInputs:focus ~ #sendButton svg path,
+#messageInputs:valid ~ #sendButton svg path {
+  fill: #3c3c3c;
+  stroke: var(--main-color);
+}
+
+#sendButton {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#sendButton svg {
+  height: 20px;
+  transition: all 0.3s ease-out;
+}
+
+#sendButton:hover svg path {
+  fill: #3c3c3c;
+  stroke: var(--main-color);
+}
+
+@media(max-width: 1005px) {
+  .messageBox {
+    width: 330px;
+    top: 0px;
+    left: 0px;
+    justify-content: space-between;
+  }
+}

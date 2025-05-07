@@ -1,0 +1,30 @@
+.container-1{
+    background-color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('./sam-balye-M4JlGCKQAu4-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+  background-blend-mode: darken;
+ 
+}
+
+.queries{
+    position: relative;
+}
+
+@media(max-width: 1005px){
+.queries{
+    top: 0px;
+}
+
+
+
+}

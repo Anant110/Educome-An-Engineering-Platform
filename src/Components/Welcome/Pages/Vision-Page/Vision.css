@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+.vision-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: var(--bg-color);
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 130px;
+  overflow: hidden;
+}
+
+.centered {
+  position: relative; /* Required for ::before to position correctly */
+  text-align: center;
+  padding: 2rem; /* Adjust the padding as needed */
+  background-color: transparent; /* Fully transparent background */
+  color: white; /* Assuming you want white text */
+  border-radius: 15px; /* Optional: Add border radius for a smoother look */
+  z-index: 100;
+  height: auto;
+  overflow: hidden;
+}
+
+.centered::before {
+  content: '';
+  position: absolute;
+  top: -40px; /* Adjust the value as needed */
+  bottom: -50px; /* Adjust the value as needed */
+  left: -30px; /* Adjust the value as needed */
+  right: -30px; /* Adjust the value as needed */
+  box-shadow: 106px -37px 90px #4828D5, -60px -32px 119px #A45C8B;
+  z-index: 0;
+  border-radius: 15px; /* Match the border radius of the .centered div */
+}
+
+
+
+.brand-names {
+  color: rgb(34, 82, 213); /* Blue color */
+  font-size: 80px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+}
+
+.vision-heading {
+  font-size: 30px;
+  font-weight: bolder;
+  opacity: 1;
+  padding: 0;
+  margin: 10px;
+  font-family: "Poetsen One", sans-serif;
+  position: relative;
+  bottom: 10px;
+}
+
+.vision-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.vision-subheading {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  opacity: 0.8;
+  word-spacing: 3px;
+}
+
+.vision-learning {
+  color: rgb(34, 82, 213);
+  position: relative;
+  right: 9px;
+}
+
+.vision-btn {
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: rgb(34, 82, 213);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Caveat", cursive;
+  font-weight: 800;
+}
+
+.featured-btn {
+  margin: 15px;
+  padding: 17px 20px;
+  background-color: rgb(34, 97, 213);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Caveat", cursive;
+  font-weight: 800;
+  position: relative;
+  bottom: 20px;
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  top: -9px;
+  left: 26px;
+}
+
+@media (max-width: 600px) {
+  .vision-container {
+    padding: 80px 0; /* Reduced padding for mobile */
+    margin: 0;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+  }
+
+  .brand-names {
+    font-size: 40px; /* Smaller font size for mobile */
+  }
+
+  .centered {
+    padding: 1rem; /* Reduced padding */
+    text-align: start; /* Center text for better appearance */
+  }
+
+  .vision-heading {
+    font-size: 1.5rem; /* Adjusted font size */
+    margin: 0; /* Remove margin */
+    line-height: 1.3; /* Improve line height */
+    position: relative;
+    bottom: 0; /* Reset position */
+    left: -11px;
+  }
+
+  .vis-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .vision-icon {
+    height: 30px;
+    width: 30px;
+    top: 5px; 
+    left: 0; 
+  }
+
+  .vision-subheading {
+    font-size: 0.9rem;
+    padding: 0 10px; 
+    position: relative;
+    bottom: 0px;
+  }
+
+  .vision-btn {
+    margin: 10px 0; /* Vertical margin for better spacing */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 1rem; /* Smaller button text */
+  }
+
+  .featured-btn {
+    padding: 12px 15px; /* Adjusted button size */
+    font-size: 1.2rem; /* Smaller button text */
+    position: relative;
+    bottom: 0; /* Reset position */
+    top: -2px;
+    right: 11px;
+  }
+
+  .icon-container {
+    flex-direction: column; /* Stack icon and text */
+    align-items: start; /* Center items */
+    top: 0; /* Reset position */
+    left: 0; /* Reset position */
+  }
+}
+

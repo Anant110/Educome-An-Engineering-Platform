@@ -1,0 +1,121 @@
+.coverletter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 20px;
+  color: white;
+}
+
+.cover-letter-generator {
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: start;
+  justify-content: start;
+  align-items: start;
+}
+
+.cover-letter-generator h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 31px;
+  color: rgba(38, 126, 248, 0.914);
+}
+
+.cover-letter-generator textarea,
+.cover-letter-generator input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cover-letter-generator textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 101px;
+}
+
+.cover-letter-generator button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2fa3fbdf;
+  color: white;
+  cursor: pointer;
+  justify-content: start;
+  text-align: start;
+  align-items: start;
+}
+
+.cover-letter-generator button:hover {
+  background-color: #0994fef6;
+}
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  color: white;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color)
+}
+
+.Modal h2 {
+  margin-bottom: 20px;
+}
+
+.Modal pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: rgb(255, 255, 255);
+  padding: 11px;
+  border-radius: 4px;
+  max-height: 350px;
+  overflow-y: auto;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Modal button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2fa3fbdf;
+  color: white;
+  cursor: pointer;
+}
+
+.Modal button:hover {
+  background-color: #008bf6df;
+}

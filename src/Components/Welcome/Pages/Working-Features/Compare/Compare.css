@@ -1,0 +1,207 @@
+/* Compare.css */
+
+.compare {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
+  color: white;
+}
+
+.Compare-Box {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+}
+
+.Compare-Box h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+form input {
+  padding: 20px;
+  margin: 10px;
+  background-color: #242c3589;
+  border-radius: 1px;
+  height: 20px;
+  color: white;
+}
+
+form .compare-btn {
+  padding: 10px 20px;
+  background-color: #006aff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .compare-btn:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.comparisons {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 20px;
+  position: relative;
+  top: 100px;
+}
+
+.com-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.userprofile {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: start;
+  margin: 10px;
+  color: white;
+}
+
+.userprofile img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+.userprofile h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: #191a1c;
+}
+
+.userprofile p {
+  margin: 5px 0;
+}
+
+.metric {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.vs-icon {
+  font-size: 2rem;
+  margin: 0 20px;
+}
+
+.comparison-table {
+  margin-top: 20px;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.comparison-table th {
+  background-color: var(--bg-color);
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: var(--bg-color);
+}
+
+.comparison-table tr:hover {
+  background-color:var(--bg-color);
+}
+
+
+
+
+@media (max-width: 600px) {
+  .comparisons {
+    flex-direction: column;
+   position: relative;
+   padding: 0px;
+   padding-bottom: 100px;
+   top: 30px;
+  }
+
+  .compare{
+    padding: 0px;
+    padding-top: 100px;
+  }
+
+  .com-box{
+    flex-direction: column;
+  }
+
+  form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  padding: 20px;
+  margin: 10px;
+  background-color: #242c3589;
+  border-radius: 1px;
+  height: 20px;
+  width: 80%;
+  font-size: 12px;
+}
+
+form .compare-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #006aff;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+  .chart {
+    width: 260px;
+  }
+
+  .vs-icon {
+    margin: 20px 0;
+  }
+
+  .Compare-Box{
+    padding: 0px;
+  }
+}

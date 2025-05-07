@@ -1,0 +1,11 @@
+.feedback-embed-container {
+  text-align: center;
+  padding: 20px;
+  padding-top: 100px;
+  background-color: white;
+}
+
+.feedback-embed-container iframe {
+  border: 1px solid #ddd;
+  background-color: var(--bg-color);
+}

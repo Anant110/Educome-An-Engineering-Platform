@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+/* Global styles */
+.dev-mate {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  padding-top: 150px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: var(--bg-color);
+  color: white;
+  overflow-x: hidden;
+}
+
+.dev-mate h2{
+  font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.repo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+
+.repo-card a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.repo-card a:hover {
+  text-decoration: underline;
+}
+
+.repo-card p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.repo-card .language {
+  display: flex;
+  align-items: center;
+}
+
+.repo-card .language strong {
+  margin-right: 5px;
+}
+
+.view-repo-button {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #d60000;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.user-rankingss {
+  margin-top: 0px;
+  width: 90%;
+  position: relative;
+  background-color: rgba(13, 91, 181, 0);
+  border: 1px solid #0672d0d9;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 100px;
+}
+
+.user-rankingss h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.user-rankingss span {
+  /* transition: 0.1s ease-in-out; */
+  background-color: #25409f;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.navigate-professionali{
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.navigate-professionali span {
+  background-color: #25409f;
+  padding: 4px;
+  border-radius: 8px;
+  font-size: 13px;
+  transition: 0.2s ease-in-out;
+}
+
+.navigate-professionali span:hover{
+  cursor: pointer;
+  background-color: #1c47d4;
+}
+
+.ranking-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  width: auto;
+}
+
+
+.ranking-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  background-color: #040303;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  transition: .2s ease-in-out;
+}
+
+.ranking-item:hover {
+  box-shadow: 0px 0px 15px rgba(9, 90, 183, 0.783);
+  cursor: pointer;
+}
+
+.profile-infos {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-right: 20px;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.username {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-detail-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.dev-score, .rank {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.see-profile-link {
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.top-skills {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #555;
+}
+
+.see-profile-text {
+  margin-left: 10px;
+  color: #0073e6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.see-profile-text:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1005px) {
+
+  .app-container {
+   position: relative;
+   top: 0px;
+   left: 0px
+  }
+
+  .dev-mate {
+    padding: 0;
+    padding-top: 70px;
+    padding-left: 10px;
+    overflow-x: hidden;
+
+  }
+
+  .dev-mate h2{
+    position: relative;
+    top: 35px;
+    font-size: 26px;
+  }
+
+  .dev-mate form {
+    font-size: 15px;
+    justify-content: start;
+    flex-direction: column;
+    left: 0;
+    align-items: center;
+  }
+
+  .dev-mate-text{
+    color: #76b5ff;
+    position: relative;
+    left: -5px;
+  }
+
+  .navigate-professionali{
+    position: relative;
+    top: 6px;
+    left: -13px;
+  }
+
+  .brand-name {
+    font-size: 50px;
+    position: relative;
+    top: 50px;
+    right: 25px;
+  }
+
+  .dev-mate input {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  button.learn-more {
+    width: auto;
+  }
+
+  .button-text {
+    opacity: 0;
+  }
+
+  .GitHub-Profile-info {
+    flex-direction: column;
+    align-items: start;
+    left: 0;
+  }
+
+  .profile {
+    padding: 0px;
+  }
+
+  .dev-mate .profile img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .dev-mate .profile h1 {
+    font-size: 20px;
+  }
+
+  .dev-mate .profile p {
+    font-size: 14px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .repos {
+    justify-content: center;
+  }
+
+  .repo-card {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .user-rankingss {
+    padding: 5px;
+    margin: 2px;
+    width: 90%;
+    position: relative;
+    left: 0px;
+  }
+
+  .navigate-professinals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+    right: 20px;
+  }
+
+  .ranking-lists {
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+   .ranking-item {
+    width: 100%;
+    position: relative;
+    left: 0px;
+  }
+
+  .profile-infos {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .user-profile {
+    margin-right: 0;
+    align-items: start;
+  }
+
+  .user-profile img {
+    width: 40px;
+    height:40px;
+  }
+
+  .user-rankings{
+    margin: 10px;
+  }
+  .username {
+    font-size: 0.8em;
+  }
+
+  .user-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-detail-card {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .user-profile-info {
+    margin: 0;
+  }
+
+  .dev-score, .rank {
+    font-size: 1em;
+  }
+
+  .see-profile-link {
+    justify-content: center;
+  }
+
+  .see-profile-text {
+    margin-left: 0;
+    font-size: 0.8em;
+  }
+
+  .languages-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .languages-card h2 {
+    font-size: 1.2em;
+  }
+
+  .languages-card li {
+    font-size: 0.9em;
+  }
+}

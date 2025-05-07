@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background-color: #1e2b7d00;
+  border-radius: 30px;
+  height: 100vh;
+}
+
+.brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  position: relative;
+  top: 100px;
+}
+
+.brand-name {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.search-suggestion {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  margin-top: -20px;
+}
+
+.message-boxies {
+  display: flex;
+  align-items: center;
+  background-color: #363434;
+  padding: 0 15px;
+  border-radius: 14px;
+  border: 1px solid rgb(0, 0, 0);
+  gap: 10px;
+  position: relative;
+  top:  90px;
+  width: 100%;
+}
+
+.message-boxies:focus-within {
+  border: 2px solid var(--main-color);
+}
+
+#messageInput {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 14px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+#sendButton {
+  background-color: #176cda;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 14px;
+  min-width: 60px;
+}
+
+@media (max-width: 1005px) {
+
+  .app-container{
+    overflow-y: hidden;
+    height: 100vh;
+  }
+
+  .brand-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  gap: 40px;
+  position: relative;
+  left: 30px;
+  top: 50px;
+}
+
+.search-suggestion {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  margin-top: 0px;
+  position: relative;
+  right: 30px; 
+}
+
+  .brand-name {
+    font-size: 4rem;
+  }
+  .message-boxies {
+    width: 100%;
+    flex-direction: row;
+    gap: 5px;
+    position:relative;
+    top: 50px;
+  }
+  #messageInput {
+    width: calc(100% - 40px);
+  }
+
+  .app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #1e2b7d00;
+  border-radius: 30px;
+  gap: 50px;
+}
+
+#sendButton{
+   position: relative;
+   right: 0px;
+   background-color: #176cda;
+   width: auto;
+   padding-left: 20px;
+}
+
+}

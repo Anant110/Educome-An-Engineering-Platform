@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+.developer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  gap: 30px;
+  font-family: 'Signika Negative', sans-serif;
+  color: white;
+}
+
+.developer-container span {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(91, 134, 255);
+}
+
+.photo-section {
+  text-align: center;
+}
+
+.photo-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 10px;
+  background-color: rgba(2, 54, 127, 0.514);
+}
+
+
+.about-developer {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.about-developer h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
+.about-developer p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Zain', sans-serif;
+  font-weight: 400;
+}
+
+.social-profiles {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.social-profiles a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+
+@media (max-width: 1005px) {
+  .developer-container {
+    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .photo-section img {
+    width: 100px;
+    height: 100px;
+  }
+  .about-section {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .about-section h2 {
+    font-size: 24px;
+  }
+  .about-section p {
+    font-size: 16px;
+  }
+  .social-profiles a {
+    font-size: 12px;
+  }
+}

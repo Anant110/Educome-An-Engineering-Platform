@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.FAQ-BOX{
+    background-color: var(--bg-color);
+    padding-bottom: 40px;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  background-color: var(--bg-color);
+}
+
+.faq-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+   font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  color: #007bff;
+}
+
+.faq-list {
+  /* border-top: 1px solid #444; */
+}
+
+.faq-item {
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.faq-icon {
+  font-size: 20px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 10px;
+  transition: .2s ease-in-out;
+  font-size: 12px;
+}
+
+.faq-answer.show {
+  max-height: 200px; /* Adjust as needed */
+  padding: 0px 10px  10px 10px;
+  color: white;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #ccc;
+}
+
+
+@media(max-width: 1005px){
+  .faq-container{
+    padding: 20px;
+  }
+  .faq-question{
+    font-size: 15px;
+  }
+  .faq-answer p{
+    font-size: 15px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+}

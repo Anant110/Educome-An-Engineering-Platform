@@ -1,0 +1,134 @@
+/* Testimonials.css */
+
+.github-profiless {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 110px;
+  padding-bottom: 90px;
+  position: relative;
+  border: 0px;
+  gap: 20px;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+.testemonial-users{
+    color: rgb(119, 110, 255);
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+.user-rankings {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  background: rgba(13, 35, 69, 0);
+  color: rgb(255, 255, 255);
+  border: 0px hsla(217, 100%, 50%, 1) solid;
+}
+
+.github-profiless span {
+  text-align: start;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navigate-professional {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.navigate-professional span {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: 1355b2a5;
+  color: white;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navigate-professional span:hover {
+  background-color: 1355b2a5;
+}
+
+.ranking-tables {
+  width: 90%;
+  border-collapse: collapse;
+  align-items: start;
+  text-align: start;
+}
+
+th{
+  padding: 6px;
+}
+
+.ranking-tables th, .ranking-tables td {
+  border: 0px solid #ddd;
+  text-align: start;
+}
+
+.crown-icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.ranking-tables th {
+  background-color: 1355b2a5;
+  color: #fdfdfd;
+}
+
+.ranking-tablse tr:nth-child(even) {
+  background-color: 1355b2a5;
+}
+
+.ranking-tables tr:hover {
+  background-color: 1355b2a5;
+}
+
+.profile-pics {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media(max-width: 1005px) {
+  .github-profiless {
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    gap: 0px;
+  }
+
+  .github-profiless span {
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    padding: 30px 0px 30px 0px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .user-ranking {
+    padding: 40px 10px;
+    margin-left: 0px;
+    width: 85%;
+  }
+
+  .profile-pics {
+    width: 20px;
+    height: 20px;
+  }
+}

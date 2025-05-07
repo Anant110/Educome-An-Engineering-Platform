@@ -1,0 +1,7 @@
+{
+    "java.compile.nullAnalysis.mode": "disabled",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
