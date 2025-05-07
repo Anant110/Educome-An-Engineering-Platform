@@ -66,8 +66,8 @@ Follow these steps to set up the project locally:
    npm start
 
 # 🧑‍💻 Author
-Abhinav Raj Srivastava
-[LinkedIn](https://github.com/Abhinavrajsrivastav)
+Abhinav Raj Srivastava, Anant Pratap Singh, Darpan Sharma
+
 
 ## 🛠️ Issues Faced
 
